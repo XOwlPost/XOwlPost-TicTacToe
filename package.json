@@ -1,0 +1,11 @@
+{
+  "name": "xowlpost-tictactoe",
+  "version": "1.0.0",
+  "description": "A simple TicTacToe game built using HTML, CSS, and JavaScript. It allows two players to play on the same app and keeps track of the score. It also includes a simple AI player that can be played against.",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Your Name",
+  "license": "ISC"
+}
