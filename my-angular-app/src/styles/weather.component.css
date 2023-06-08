@@ -1,0 +1,43 @@
+.sunny {
+  background-color: #ffd700; /* Yellow background for sunny weather */
+  color: #000000; /* Black text color for sunny weather */
+}
+
+.stormy {
+  background-color: #808080; /* Gray background for stormy weather */
+  color: #ffffff; /* White text color for stormy weather */
+}
+
+.weather-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.weather-temperature {
+  font-size: 48px;
+  font-weight: bold;
+  color: #ff5722;
+}
+
+.weather-description {
+  font-size: 18px;
+  color: #666;
+}
+
+.weather-loading {
+  font-size: 18px;
+  color: #999;
+}
+
+.weather-error {
+  font-size: 18px;
+  color: #f44336;
+}

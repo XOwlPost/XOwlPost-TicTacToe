@@ -1,0 +1,85 @@
+<!-- app.component.html -->
+<button mat-button>Button</button>
+
+<style>
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ... previous styles ... */
+
+  /* Additional Styles */
+
+  /* Footer */
+  footer {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 20px;
+    color: #666;
+  }
+
+  footer a {
+    margin-left: 4px;
+  }
+
+  /* Clouds Background */
+  svg#clouds {
+    position: fixed;
+    bottom: -160px;
+    left: -230px;
+    z-index: -10;
+    width: 1920px;
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+    /* ... previous responsive styles ... */
+
+    /* Hide clouds on smaller screens */
+    svg#clouds {
+      display: none;
+      visibility: hidden;
+    }
+  }
+</style>
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <!-- ... previous toolbar content ... -->
+</div>
+
+<div class="content" role="main">
+  <!-- Highlight Card -->
+  <div class="card highlight-card card-small">
+    <!-- ... previous card content ... -->
+  </div>
+
+  <div class="card-container"></div>
+
+  <!-- Terminal -->
+  <div class="terminal" [ngSwitch]="selection.value">
+    <pre *ngSwitchDefault>ng generate component xyz</pre>
+    <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
+    <pre *ngSwitchCase="'pwa'">ng add @angular/pwa</pre>
+    <pre *ngSwitchCase="'dependency'">ng add _____</pre>
+    <pre *ngSwitchCase="'test'">ng test</pre>
+    <pre *ngSwitchCase="'build'">ng build</pre>
+  </div>
+
+  <!-- Links -->
+  <div class="card-container">
+    <a class="circle-link" title="Find a Local Meetup" href="https://www.meetup.com/find/?keywords=angular" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24.607" height="23.447" viewBox="0 0 24.607 23.447">
+        <title>Meetup Logo</title>
+        <path id="logo--mSwarm" d="M21.221,14.95A4.393,4.393,0,0,1,17.6,19.281a4.452,4.452,0,0,1-1.076.138H1.928c-.372,0-.747-.016-1.116-.049a4.466,4.466,0,0,1-1.076-.138A4.392"></path>
+      </svg>
+    </a>
+  </div>
+</div>

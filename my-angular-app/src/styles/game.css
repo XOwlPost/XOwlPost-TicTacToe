@@ -1,0 +1,65 @@
+/* CSS class for animating game buttons */
+.game-button {
+  transition: transform 0.3s ease-in-out;
+}
+
+/* CSS class for transition effects on game board updates */
+.game-grid {
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* CSS class for transition effect on winning game buttons */
+.game-button-win {
+  transition: transform 0.4s ease-in-out;
+  animation: button-win-animation 1s ease-in-out;
+}
+
+/* CSS class for transition effect on losing game buttons */
+.game-button-lose {
+  transition: transform 0.4s ease-in-out;
+  animation: button-lose-animation 1s ease-in-out;
+}
+
+/* Keyframes for winning game button animation */
+@keyframes button-win-animation {
+  0% {
+    transform: scale(1);
+    background-color: #4CAF50;
+    color: white;
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: #8BC34A;
+    color: white;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #4CAF50;
+    color: white;
+  }
+}
+
+/* Keyframes for losing game button animation */
+@keyframes button-lose-animation {
+  0% {
+    transform: rotate(0);
+    background-color: #F44336;
+    color: white;
+  }
+  50% {
+    transform: rotate(360deg);
+    background-color: #FF5722;
+    color: white;
+  }
+  100% {
+    transform: rotate(0);
+    background-color: #F44336;
+    color: white;
+  }
+}
+
+  
+  
+  
+  
+  

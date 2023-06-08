@@ -1,0 +1,43 @@
+@import 'colors.scss';
+
+/* Use the color variables in your component's styles */
+.login-form {
+  background-color: $primary-green;
+  padding: 20px;
+}
+
+.login-form .title {
+  color: $accent-earth;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.login-form .input {
+  background-color: $secondary-green;
+  color: $accent-earth;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.login-form .button {
+  background-color: $medium-green;
+  color: $accent-earth;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.login-form .button:hover {
+  background-color: $primary-brown;
+  color: $accent-earth;
+}
+
+.login-form .message {
+  color: $secondary-brown;
+  margin-top: 10px;
+}
+
+/* And so on... */

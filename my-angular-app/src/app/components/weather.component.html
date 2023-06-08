@@ -1,0 +1,6 @@
+<div [ngClass]="{ 'sunny': isSunny, 'stormy': isStormy }">
+    <h2>Current Weather</h2>
+    <p>Temperature: {{ weatherData.main.temp }}°C</p>
+    <p>Weather: {{ weatherData.weather[0].description }}</p>
+  </div>
+  

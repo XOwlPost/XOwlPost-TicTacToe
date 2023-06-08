@@ -1,0 +1,33 @@
+<div class="game-grid">
+    <!-- Game buttons -->
+    <button class="reset-button" aria-label="Reset game">Reset</button>
+      
+    <button class="game-button" aria-label="Cell 1"></button>
+    <button class="game-button" aria-label="Cell 2"></button>
+    <button class="game-button" aria-label="Cell 3"></button>
+    <button class="game-button" aria-label="Cell 4"></button>
+    <button class="game-button" aria-label="Cell 5"></button>
+    <button class="game-button" aria-label="Cell 6"></button>
+  
+    <button class="cell" aria-label="Empty cell" data-cell="1">
+      <span class="cell-content"></span>
+    </button>
+  
+    <!-- Add more buttons for other cells -->
+  </div>
+  
+  <div class="game-status" aria-live="assertive">
+    <span id="status-message">Player X's turn</span>
+  </div>
+  
+  <div class="game-over-message" id="game-over-message" aria-live="assertive" aria-atomic="true"></div>
+  <div class="player-names">
+    <label for="playerX-name">Player X Name:</label>
+    <input type="text" id="playerX-name" placeholder="Enter name" />
+  
+    <label for="playerO-name">Player O Name:</label>
+    <input type="text" id="playerO-name" placeholder="Enter name" />
+  </div>
+  
+  <script src="game.js"></script>
+  

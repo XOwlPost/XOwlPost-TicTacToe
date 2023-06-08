@@ -1,0 +1,7 @@
+:root {
+   /* Nature theme */
+[data-theme="nature"] {
+    --primary-color: #4caf50;
+    --secondary-color: #8bc34a;
+    --background-color: #cddc39;
+  }
