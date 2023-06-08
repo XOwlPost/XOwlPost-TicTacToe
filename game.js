@@ -1,3 +1,18 @@
+import { Magic } from 'magic-sdk';
+require('dotenv').config()
+
+const magic = new Magic(process.env.MAGIC_API_KEY);
+
+async function connectWallet() {
+  await magic.auth.loginWithPopup();
+  const address = await magic.user.getMetadata();
+  console.log(`Connected to wallet with address: ${address.publicAddress}`);
+}
+
+connectWallet();
+
+// Rest of your code for the TicTacToe game goes here
+
 // Initialize variables
 let playerOne = "X";
 let playerTwo = "O";
