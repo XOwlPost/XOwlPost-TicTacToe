@@ -1,0 +1,56 @@
+{
+  "name": "my-angular-app",
+  "version": "1.0.0",
+  "description": "My Angular application",
+  "scripts": {
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not IE 11"
+  ],
+  "private": true,
+  "dependencies": {
+    "@abacritt/angularx-social-login": "^2.0.0",
+    "@angular-devkit/build-angular": "16.0.5",
+    "@angular/animations": "16.0.5",
+    "@angular/common": "16.0.5",
+    "@angular/compiler": "16.0.5",
+    "@angular/core": "16.0.5",
+    "@angular/forms": "16.0.5",
+    "@angular/material": "16.0.4",
+    "@angular/platform-browser": "16.0.5",
+    "@angular/platform-browser-dynamic": "16.0.5",
+    "@angular/router": "16.0.5",
+    "@sendbird/uikit-react": "3.5.0-rc.1",
+    "dotenv": "16.0.3",
+    "rxjs": "7.8.1",
+    "spotify-web-api-js": "1.5.2",
+    "swagger-ui-dist": "^5.1.0",
+    "tailwindcss": "^3.3.2",
+    "tailwindcss-animations": "^2.0.0",
+    "tailwindcss-aspect-ratio": "^3.0.0",
+    "tailwindcss-grid": "^1.2.1",
+    "tailwindcss-scrollbar": "^0.1.0",
+    "tailwindcss-typography": "^3.1.0",
+    "tslib": "2.3.0",
+    "zone.js": "0.11.4"
+  },
+  "devDependencies": {
+    "@angular/cli": "^16.0.5",
+    "@angular/compiler-cli": "16.0.5",
+    "@types/jasmine": "~3.8.0",
+    "@types/node": "^12.11.1",
+    "jasmine-core": "~3.8.0",
+    "karma": "~6.3.4",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.1.0",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "^1.7.0",
+    "tailwindcss-responsive-embed": "^0.2.2",
+    "typescript": "4.9.3"
+  }
+}

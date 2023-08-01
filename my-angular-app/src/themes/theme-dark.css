@@ -1,0 +1,7 @@
+:root {
+   /* Dark theme */
+  [data-theme="dark"] {
+    --primary-color: #e83e8c;
+    --secondary-color: #343a40;
+    --background-color: #212529;
+  }

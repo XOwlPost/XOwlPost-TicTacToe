@@ -1,0 +1,5 @@
+/.idea/
+/.vscode/
+/config.json
+/node_modules/
+/password.txt

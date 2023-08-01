@@ -1,0 +1,7 @@
+:root {
+ /* Space theme */
+  [data-theme="space"] {
+    --primary-color: #00ffff;
+    --secondary-color: #ff00ff;
+    --background-color: #000020;
+  }

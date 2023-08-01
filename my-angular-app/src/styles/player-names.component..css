@@ -1,0 +1,70 @@
+.player-names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .player-names label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .player-names input[type="text"] {
+    width: 250px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  .player-names input[type="text"]::placeholder {
+    color: #999;
+  }
+  
+  .player-names input[type="text"]:focus {
+    outline: none;
+    border-color: #00b4ff;
+    box-shadow: 0 0 5px rgba(0, 180, 255, 0.5);
+  }
+  
+  .player-names input[type="text"]:hover {
+    border-color: #bbb;
+  }
+  
+  .player-names .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .player-names .submit-button {
+    margin-top: 20px;
+  }
+  
+  .player-names .submit-button button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #00b4ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .player-names .submit-button button:hover {
+    background-color: #0091d6;
+  }
+  
+  .player-names .submit-button button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 180, 255, 0.5);
+  }
+  

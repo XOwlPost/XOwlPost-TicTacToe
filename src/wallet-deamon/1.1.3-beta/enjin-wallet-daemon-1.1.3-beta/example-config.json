@@ -1,0 +1,8 @@
+{
+    "salt": "193e9997-5a10-4d9e-a829-69ddcf6cbf70",
+    "keyIterations": 1000,
+    "chain": "kovan",
+    "enjinxEndpoint": "https://daemon.api.enjinx.io/",
+    "minGasPrice": 1000000000,
+    "maxGasPrice": 21000000000
+}

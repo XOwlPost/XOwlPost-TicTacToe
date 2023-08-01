@@ -1,0 +1,26 @@
+$primary-green: #3b804d;
+$secondary-green: #528c63;
+$accent-green: #89b185;
+
+$primary-brown: #6f4e37;
+$secondary-brown: #8c725b;
+$accent-brown: #b89f8a;
+
+$primary-earth: #a0906d;
+$secondary-earth: #c5b395;
+$accent-earth: #e7d7bb;
+.background {
+    background-color: $primary-green;
+  }
+  
+  .button {
+    background-color: $secondary-green;
+    color: $accent-earth;
+  }
+  
+  .text {
+    color: $primary-brown;
+  }
+  
+  // And so on...
+
