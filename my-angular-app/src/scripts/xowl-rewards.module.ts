@@ -14,7 +14,7 @@ import { WeatherComponent } from './weather.component';
 import { LoginComponent } from './login.component';
 import { DataService } from './data.service';
 import { authConfig } from './oauth.conf';
-import { PlayerComponent } from './player.component';
+import { PlayerComponent } from '../app/components/player/player.component';
 
 @NgModule({
   declarations: [

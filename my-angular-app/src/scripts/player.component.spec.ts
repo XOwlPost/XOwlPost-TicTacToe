@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 
-import { PlayerComponent } from './player.component';
-import { SearchComponent } from './search.component';
+import { PlayerComponent } from '../app/components/player/player.component';
+import { SearchComponent } from '../app/components/searchbar/search.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 

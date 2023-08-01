@@ -1,0 +1,137 @@
+openapi: 3.0.0
+info:
+  title: TicTacToe API
+  description: API for managing TicTacToe games
+  version: 1.0.0
+paths:
+  /game:
+    post:
+      summary: Create a new TicTacToe game
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GameRequest'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameResponse'
+  /game/{id}:
+    get:
+      summary: Get the details of a TicTacToe game
+      parameters:
+        - name: id
+          in: path
+          description: ID of the game
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameResponse'
+  /game/{id}/move:
+    post:
+      summary: Make a move in a TicTacToe game
+      parameters:
+        - name: id
+          in: path
+          description: ID of the game
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MoveRequest'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MoveResponse'
+  /game/{id}/reset:
+    post:
+      summary: Reset a TicTacToe game
+      parameters:
+        - name: id
+          in: path
+          description: ID of the game
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameResponse'
+  /multiplayer/game:
+    post:
+      summary: Create a new multiplayer TicTacToe game
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MultiplayerGameRequest'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GameResponse'
+components:
+  schemas:
+    GameRequest:
+      type: object
+      properties:
+        player1:
+          type: string
+        player2:
+          type: string
+    GameResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        player1:
+          type: string
+        player2:
+          type: string
+        board:
+          type: array
+          items:
+            type: array
+            items:
+              type: string
+    MoveRequest:
+      type: object
+      properties:
+        id:
+          type: string
+        player:
+          type: string
+        position:
+          type: integer
+    MoveResponse:
+      type: object
+      properties:
+        message:
+          type: string
+        winner:
+          type: string
+    MultiplayerGameRequest:
+      type: object

@@ -1,6 +1,5 @@
 // Assuming you have obtained the initial access token and refresh token
-const clientId = 23f0fa66edac4d23ba3313045e81db62;
-const clientSecret = 9a44d4e34e0e47f7acc030a0962d84c9;
+
 const refreshToken = require('dotenv').config();
 
 
