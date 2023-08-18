@@ -9,7 +9,7 @@ First off, thank you for considering contributing to XOwlPost-TicTacToe! It's pe
 
 ## Coding Standards
 
-- Please ensure your code adheres to the [standard style guide](CODING_STYLE_GUIDE).
+- Please ensure your code adheres to the [standard style guide](CODING_STYLE_GUIDE.md).
 - Include comments where needed.
 
 ## Pull Requests
