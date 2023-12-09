@@ -3,7 +3,18 @@ import { handleMove, resetBoard, scorePlayerOne, scorePlayerTwo } from './JS/app
 
 require('dotenv').config()
 
+const express = require('express');
+const app = express();
+
+const config = require('./config/config.dev.js');
+
+app.listen(config.PORT, () => {
+  console.log(`Server running on port ${config.PORT}`);
+});
+
+// The rest of your Express app setup...
 const magic = new Magic(process.env.MAGIC_API_KEY);
+
 
 async function connectWallet() {
   await magic.auth.loginWithPopup();

@@ -1,4 +1,4 @@
-FROM node:14  # Or whichever version you need
+FROM node:16  # Or whichever version you need
 WORKDIR /app
 COPY ./TicTacToe/package*.json ./
 RUN yarn install
